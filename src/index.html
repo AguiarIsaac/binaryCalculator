@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../public/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora binária</title>
+    </head>
+
+    <body>
+        <div class="container">
+           <div class="title">
+               <h1>Calculadora binária</h1>
+           </div>
+
+            <div class="content">
+                <form action=" " method="GET" name="conversao">
+                    <div class="input">
+                        <label class="labels">Informe o número binário:</label>
+                        <input type="text" name="binario" maxlength="8" class="boxes"><br>
+                    </div>
+
+                    <div class="output">
+                        <label class="labels">Resultado em decimal:</label>
+                        <input type="text" name="output" class="boxes" id="output"><br>
+                    </div>
+
+                    <div class="buttom">
+                        <input type="button" name="btn_conversao" id="btn_conversao" value="Converter" onclick="conversor()" class="buttons">
+                        <input type="reset" value="Reset" id="btn_reset" class="buttons">
+                    </div>
+
+                    <p><strong>Obs:</strong> Números binários de até 8 dígitos, equivalente a um Byte.</p>
+
+                </form>
+            </div>
+
+            <div class="formula">
+                <p>Para converter um número binário para decimal, basta multiplicar cada bit pelo seu valor de posição e somar os resultados.</p>
+                <img src="../public/img/tab.jpg" alt="Formula para conversão">
+            </div>
+        </div>
+        <script src="../public/main.js"></script>
+    </body>
+</html>
